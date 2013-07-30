@@ -50,7 +50,9 @@ for fullpath, dirs, files in os.walk(root):
 		
 		cur.execute(query, 
 			(name,ext,size,root,relativepath,sha1,created,modified,accessed))
-
+	
+	print "Complete with directory", fullpath
+			
 # Make the changes to the database persistent
 conn.commit()
 

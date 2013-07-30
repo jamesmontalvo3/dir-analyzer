@@ -22,8 +22,8 @@ cur.execute("""
 	CREATE TABLE IF NOT EXISTS files (
 	id serial PRIMARY KEY,
 	filename varchar(255),
-	extension varchar(10),
-	bytes integer,
+	extension varchar(255),
+	bytes bigint,
 	root text,
 	relativepath text,
 	sha1 varchar(40),

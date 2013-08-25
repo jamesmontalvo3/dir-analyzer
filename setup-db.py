@@ -1,9 +1,7 @@
 #!/usr/bin/env python 
 
-import os
-from os.path import join, getsize
-import psycopg2
-import config
+import psycopg2 # Python module for PostgreSQL database
+import config 
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # Prior to running this script setup your database  #
